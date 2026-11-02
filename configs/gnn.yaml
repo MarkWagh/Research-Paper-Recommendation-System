@@ -4,15 +4,15 @@ gnn:
   label: gnn
   seeds: [0, 1, 2]
   params:
-    feature: specter2
+    feature: minilm          # SPECTER2 encoding not completed (see README); MiniLM is the frozen choice
     hidden: 256
     out_dim: 256
     num_layers: 2
     fanout: [10, 5]
     dropout: 0.1
     lr: 0.001
-    epochs: 30
-    patience: 4
+    epochs: 15
+    patience: 3
     query_frac: 0.5
     history_frac: 0.5
     batch_queries: 256

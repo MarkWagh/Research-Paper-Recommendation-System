@@ -15,7 +15,7 @@ from src.utils import base_argparser, load_config, resolve
 
 FAMILY = {"popularity": "Popularity", "tfidf": "Content", "bm25": "Content", "ogb_features": "Content", "ogb_centered": "Content",
           "minilm": "Content", "specter2": "Content", "cocitation": "Graph", "ppr": "Graph", "node2vec": "Graph",
-          "fusion": "Hybrid", "gnn": "Hybrid", "lightgcn": "Graph"}
+          "fusion": "Hybrid", "fusion_gnn": "Hybrid", "gnn": "Hybrid"}
 FAMILY_ORDER = ["Popularity", "Content", "Graph", "Hybrid", "Other"]
 METRICS = ["recall@10", "recall@20", "recall@50", "ndcg@10", "ndcg@20", "ndcg@50", "mrr"]
 
@@ -30,7 +30,7 @@ def collect(runs_dir: Path, split: str) -> pd.DataFrame:
         row = {"family": FAMILY.get(label.split("_seed")[0], FAMILY.get(r["model"], "Other")),
                "model": label, "variant": r["variant"], "seeds": len(r["seeds"])}
         params = r["runs"][0].get("params", {})
-        tuned = {k: v for k, v in params.items() if k in ("alpha", "w_content", "w_graph", "w_pop")}
+        tuned = {k: v for k, v in params.items() if k in ("alpha", "norm", "w_graph", "w_pop")}
         row["chosen"] = ", ".join(f"{k}={v}" for k, v in tuned.items()) if r["runs"][0].get("tuning") else ""
         for m in METRICS:
             row[m] = r[split][m]

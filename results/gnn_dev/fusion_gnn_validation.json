@@ -1,0 +1,5 @@
+{
+  "note": "GNN-based fusion (configs/fusion_gnn.yaml), seed-0 GNN as a component, log-rank normalisation. Weights tuned on 1,500 validation queries; metrics below are on all 5,000 validation queries (copied from logs/fusion_gnn.log). The test evaluation was stopped to meet the deadline, so there are NO test numbers for these variants.",
+  "gnn_graph": {"val": {"recall@10": 0.3378, "ndcg@10": 0.3312, "recall@20": 0.4545, "ndcg@20": 0.3749, "recall@50": 0.6029, "ndcg@50": 0.4291, "mrr": 0.5354}},
+  "gnn_text_graph": {"val": {"recall@10": 0.3394, "ndcg@10": 0.3335, "recall@20": 0.4587, "ndcg@20": 0.3784, "recall@50": 0.6113, "ndcg@50": 0.4341, "mrr": 0.5396}}
+}

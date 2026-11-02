@@ -1,0 +1,842 @@
+{
+  "model": "fusion/text_graph_pop",
+  "examples": [
+    {
+      "query": {
+        "node": 95821,
+        "year": 2019,
+        "title": "multi task learning for argumentation mining"
+      },
+      "history": [
+        {
+          "node": 7914,
+          "year": 2017,
+          "title": "argumentation mining in user generated web discourse"
+        },
+        {
+          "node": 18054,
+          "year": 2014,
+          "title": "move evaluation in go using deep convolutional neural networks"
+        },
+        {
+          "node": 33439,
+          "year": 2017,
+          "title": "neural end to end learning for computational argumentation mining"
+        },
+        {
+          "node": 49259,
+          "year": 2015,
+          "title": "bidirectional lstm crf models for sequence tagging"
+        },
+        {
+          "node": 52083,
+          "year": 2016,
+          "title": "compositional sequence labeling models for error detection in learner writing"
+        },
+        {
+          "node": 73222,
+          "year": 2016,
+          "title": "multilingual part of speech tagging with bidirectional long short term memory models and auxiliary loss"
+        },
+        {
+          "node": 91733,
+          "year": 2017,
+          "title": "reporting score distributions makes a difference performance study of lstm networks for sequence tagging"
+        },
+        {
+          "node": 97592,
+          "year": 2016,
+          "title": "a joint many task model growing a neural network for multiple nlp tasks"
+        },
+        {
+          "node": 99517,
+          "year": 2016,
+          "title": "multi task cross lingual sequence tagging from scratch"
+        },
+        {
+          "node": 111563,
+          "year": 2017,
+          "title": "multitask learning for fine grained twitter sentiment analysis"
+        },
+        {
+          "node": 115565,
+          "year": 2017,
+          "title": "cross lingual and cross domain discourse segmentation of entire documents"
+        },
+        {
+          "node": 136668,
+          "year": 2017,
+          "title": "optimal hyperparameters for deep lstm networks for sequence labeling tasks"
+        },
+        {
+          "node": 137062,
+          "year": 2016,
+          "title": "neural architectures for named entity recognition"
+        },
+        {
+          "node": 144665,
+          "year": 2017,
+          "title": "an overview of multi task learning in deep neural networks"
+        },
+        {
+          "node": 153601,
+          "year": 2015,
+          "title": "a primer on neural network models for natural language processing"
+        },
+        {
+          "node": 155204,
+          "year": 2017,
+          "title": "deep multitask learning for semantic dependency parsing"
+        },
+        {
+          "node": 165562,
+          "year": 2015,
+          "title": "multi task sequence to sequence learning"
+        },
+        {
+          "node": 166408,
+          "year": 2016,
+          "title": "attending to characters in neural sequence labeling models"
+        }
+      ],
+      "num_targets": 17,
+      "recommendations": [
+        {
+          "rank": 1,
+          "node": 65541,
+          "year": 2018,
+          "title": "multi task learning for argumentation mining in low resource settings",
+          "times_cited": 2,
+          "hit": false
+        },
+        {
+          "rank": 2,
+          "node": 88165,
+          "year": 2016,
+          "title": "when is multitask learning effective semantic sequence prediction under varying data conditions",
+          "times_cited": 13,
+          "hit": true
+        },
+        {
+          "rank": 3,
+          "node": 6146,
+          "year": 2011,
+          "title": "natural language processing almost from scratch",
+          "times_cited": 684,
+          "hit": true
+        },
+        {
+          "rank": 4,
+          "node": 154342,
+          "year": 2014,
+          "title": "sequence to sequence learning with neural networks",
+          "times_cited": 1606,
+          "hit": true
+        },
+        {
+          "rank": 5,
+          "node": 106699,
+          "year": 2013,
+          "title": "distributed representations of words and phrases and their compositionality",
+          "times_cited": 1910,
+          "hit": false
+        },
+        {
+          "rank": 6,
+          "node": 73346,
+          "year": 2017,
+          "title": "semi supervised multitask learning for sequence labeling",
+          "times_cited": 27,
+          "hit": false
+        },
+        {
+          "rank": 7,
+          "node": 63929,
+          "year": 2016,
+          "title": "end to end sequence labeling via bi directional lstm cnns crf",
+          "times_cited": 96,
+          "hit": false
+        },
+        {
+          "rank": 8,
+          "node": 94874,
+          "year": 2013,
+          "title": "efficient estimation of word representations in vector space",
+          "times_cited": 1415,
+          "hit": false
+        },
+        {
+          "rank": 9,
+          "node": 115359,
+          "year": 2014,
+          "title": "neural machine translation by jointly learning to align and translate",
+          "times_cited": 1901,
+          "hit": false
+        },
+        {
+          "rank": 10,
+          "node": 104757,
+          "year": 2016,
+          "title": "recurrent neural network for text classification with multi task learning",
+          "times_cited": 18,
+          "hit": false
+        }
+      ],
+      "missed_targets": [
+        {
+          "node": 8016,
+          "title": "still not there comparing traditional sequence to sequence models to encoder decoder neural networks on monotone string translation tasks"
+        },
+        {
+          "node": 9148,
+          "title": "a simple way to initialize recurrent networks of rectified linear units"
+        },
+        {
+          "node": 14818,
+          "title": "multi task multi domain representation learning for sequence tagging"
+        },
+        {
+          "node": 19955,
+          "title": "lstm a search space odyssey"
+        },
+        {
+          "node": 26180,
+          "title": "introduction to the conll 2003 shared task language independent named entity recognition"
+        }
+      ]
+    },
+    {
+      "query": {
+        "node": 104346,
+        "year": 2019,
+        "title": "procedural content generation from automatically generating game levels to increasing generality in machine learning"
+      },
+      "history": [
+        {
+          "node": 37430,
+          "year": 2016,
+          "title": "cad2rl real single image flight without a single real image"
+        },
+        {
+          "node": 52711,
+          "year": 2016,
+          "title": "equality of opportunity in supervised learning"
+        },
+        {
+          "node": 74685,
+          "year": 2017,
+          "title": "procedural content generation via machine learning pcgml"
+        },
+        {
+          "node": 82555,
+          "year": 2017,
+          "title": "the effectiveness of data augmentation in image classification using deep learning"
+        },
+        {
+          "node": 89398,
+          "year": 2018,
+          "title": "quantifying generalization in reinforcement learning"
+        },
+        {
+          "node": 102409,
+          "year": 2018,
+          "title": "autoaugment learning augmentation policies from data"
+        },
+        {
+          "node": 159870,
+          "year": 2018,
+          "title": "recurrent world models facilitate policy evolution"
+        },
+        {
+          "node": 165985,
+          "year": 2018,
+          "title": "illuminating generalization in deep reinforcement learning through procedural level generation"
+        }
+      ],
+      "num_targets": 8,
+      "recommendations": [
+        {
+          "rank": 1,
+          "node": 74516,
+          "year": 2013,
+          "title": "the arcade learning environment an evaluation platform for general agents",
+          "times_cited": 242,
+          "hit": false
+        },
+        {
+          "rank": 2,
+          "node": 143001,
+          "year": 2013,
+          "title": "playing atari with deep reinforcement learning",
+          "times_cited": 431,
+          "hit": false
+        },
+        {
+          "rank": 3,
+          "node": 69580,
+          "year": 2018,
+          "title": "evolving mario levels in the latent space of a deep convolutional generative adversarial network",
+          "times_cited": 5,
+          "hit": true
+        },
+        {
+          "rank": 4,
+          "node": 62773,
+          "year": 2017,
+          "title": "deep learning for video game playing",
+          "times_cited": 5,
+          "hit": false
+        },
+        {
+          "rank": 5,
+          "node": 13374,
+          "year": 2016,
+          "title": "vizdoom a doom based ai research platform for visual reinforcement learning",
+          "times_cited": 37,
+          "hit": false
+        },
+        {
+          "rank": 6,
+          "node": 1353,
+          "year": 2014,
+          "title": "adam a method for stochastic optimization",
+          "times_cited": 5129,
+          "hit": false
+        },
+        {
+          "rank": 7,
+          "node": 69794,
+          "year": 2015,
+          "title": "batch normalization accelerating deep network training by reducing internal covariate shift",
+          "times_cited": 2310,
+          "hit": false
+        },
+        {
+          "rank": 8,
+          "node": 132768,
+          "year": 2017,
+          "title": "revisiting the arcade learning environment evaluation protocols and open problems for general agents",
+          "times_cited": 27,
+          "hit": false
+        },
+        {
+          "rank": 9,
+          "node": 83863,
+          "year": 2018,
+          "title": "a study on overfitting in deep reinforcement learning",
+          "times_cited": 4,
+          "hit": true
+        },
+        {
+          "rank": 10,
+          "node": 25208,
+          "year": 2014,
+          "title": "very deep convolutional networks for large scale image recognition",
+          "times_cited": 4748,
+          "hit": false
+        }
+      ],
+      "missed_targets": [
+        {
+          "node": 9367,
+          "title": "generalization properties and implicit regularization for multiple passes sgm"
+        },
+        {
+          "node": 33689,
+          "title": "policy transfer with strategy optimization"
+        },
+        {
+          "node": 59448,
+          "title": "domain randomization for transferring deep neural networks from simulation to the real world"
+        },
+        {
+          "node": 59449,
+          "title": "imagenet trained cnns are biased towards texture increasing shape bias improves accuracy and robustness"
+        },
+        {
+          "node": 99773,
+          "title": "general video game ai a multi track framework for evaluating agents games and content generation algorithms"
+        }
+      ]
+    },
+    {
+      "query": {
+        "node": 114700,
+        "year": 2019,
+        "title": "mask scoring r cnn"
+      },
+      "history": [
+        {
+          "node": 10110,
+          "year": 2015,
+          "title": "learning to segment object candidates"
+        },
+        {
+          "node": 23336,
+          "year": 2015,
+          "title": "instance aware semantic segmentation via multi task network cascades"
+        },
+        {
+          "node": 23454,
+          "year": 2016,
+          "title": "instance sensitive fully convolutional networks"
+        },
+        {
+          "node": 25152,
+          "year": 2015,
+          "title": "you only look once unified real time object detection"
+        },
+        {
+          "node": 26686,
+          "year": 2015,
+          "title": "proposal free network for instance level object segmentation"
+        },
+        {
+          "node": 32116,
+          "year": 2016,
+          "title": "object detection free instance segmentation with labeling transformations"
+        },
+        {
+          "node": 37533,
+          "year": 2017,
+          "title": "improving object localization with fitness nms and bounded iou loss"
+        },
+        {
+          "node": 58630,
+          "year": 2016,
+          "title": "ssd single shot multibox detector"
+        },
+        {
+          "node": 63012,
+          "year": 2018,
+          "title": "ccnet criss cross attention for semantic segmentation"
+        },
+        {
+          "node": 76487,
+          "year": 2017,
+          "title": "deformable convolutional networks"
+        },
+        {
+          "node": 98749,
+          "year": 2016,
+          "title": "instancecut from edges to instances with multicut"
+        },
+        {
+          "node": 125272,
+          "year": 2013,
+          "title": "rich feature hierarchies for accurate object detection and semantic segmentation"
+        },
+        {
+          "node": 143347,
+          "year": 2017,
+          "title": "semantic instance segmentation with a discriminative loss function"
+        },
+        {
+          "node": 143745,
+          "year": 2016,
+          "title": "fully convolutional instance aware semantic segmentation"
+        },
+        {
+          "node": 144770,
+          "year": 2018,
+          "title": "object detection in videos by short and long range object linking"
+        },
+        {
+          "node": 161249,
+          "year": 2017,
+          "title": "deep patch learning for weakly supervised object classification and discovery"
+        }
+      ],
+      "num_targets": 16,
+      "recommendations": [
+        {
+          "rank": 1,
+          "node": 165736,
+          "year": 2017,
+          "title": "mask r cnn",
+          "times_cited": 355,
+          "hit": false
+        },
+        {
+          "rank": 2,
+          "node": 133376,
+          "year": 2015,
+          "title": "faster r cnn towards real time object detection with region proposal networks",
+          "times_cited": 1611,
+          "hit": true
+        },
+        {
+          "rank": 3,
+          "node": 67166,
+          "year": 2015,
+          "title": "deep residual learning for image recognition",
+          "times_cited": 4564,
+          "hit": true
+        },
+        {
+          "rank": 4,
+          "node": 132802,
+          "year": 2017,
+          "title": "masklab instance segmentation by refining object detection with semantic and direction features",
+          "times_cited": 7,
+          "hit": true
+        },
+        {
+          "rank": 5,
+          "node": 25208,
+          "year": 2014,
+          "title": "very deep convolutional networks for large scale image recognition",
+          "times_cited": 4748,
+          "hit": false
+        },
+        {
+          "rank": 6,
+          "node": 166425,
+          "year": 2014,
+          "title": "fully convolutional networks for semantic segmentation",
+          "times_cited": 1850,
+          "hit": true
+        },
+        {
+          "rank": 7,
+          "node": 79124,
+          "year": 2015,
+          "title": "fast r cnn",
+          "times_cited": 980,
+          "hit": false
+        },
+        {
+          "rank": 8,
+          "node": 73053,
+          "year": 2014,
+          "title": "semantic image segmentation with deep convolutional nets and fully connected crfs",
+          "times_cited": 526,
+          "hit": false
+        },
+        {
+          "rank": 9,
+          "node": 93649,
+          "year": 2014,
+          "title": "imagenet large scale visual recognition challenge",
+          "times_cited": 2195,
+          "hit": false
+        },
+        {
+          "rank": 10,
+          "node": 75195,
+          "year": 2014,
+          "title": "simultaneous detection and segmentation",
+          "times_cited": 202,
+          "hit": false
+        }
+      ],
+      "missed_targets": [
+        {
+          "node": 1739,
+          "title": "segmentation aware convolutional networks using local attention masks"
+        },
+        {
+          "node": 72679,
+          "title": "deeplab semantic image segmentation with deep convolutional nets atrous convolution and fully connected crfs"
+        },
+        {
+          "node": 92836,
+          "title": "densebox unifying landmark localization with end to end object detection"
+        },
+        {
+          "node": 94491,
+          "title": "revisiting rcnn on awakening the classification power of faster rcnn"
+        },
+        {
+          "node": 97466,
+          "title": "deep watershed transform for instance segmentation"
+        }
+      ]
+    },
+    {
+      "query": {
+        "node": 151967,
+        "year": 2019,
+        "title": "single particle cryo electron microscopy mathematical theory computational challenges and opportunities"
+      },
+      "history": [
+        {
+          "node": 11909,
+          "year": 2015,
+          "title": "non unique games over compact groups and orientation estimation in cryo em"
+        },
+        {
+          "node": 49654,
+          "year": 2018,
+          "title": "apple picker automatic particle picking a low effort cryo em framework"
+        },
+        {
+          "node": 123215,
+          "year": 2016,
+          "title": "denoising and covariance estimation of single particle cryo em images"
+        },
+        {
+          "node": 132818,
+          "year": 2018,
+          "title": "estimation in the group action channel"
+        },
+        {
+          "node": 137927,
+          "year": 2018,
+          "title": "bispectrum inversion with application to multireference alignment"
+        }
+      ],
+      "num_targets": 5,
+      "recommendations": [
+        {
+          "rank": 1,
+          "node": 32622,
+          "year": 2014,
+          "title": "fast steerable principal component analysis",
+          "times_cited": 3,
+          "hit": true
+        },
+        {
+          "rank": 2,
+          "node": 61432,
+          "year": 2017,
+          "title": "the sample complexity of multi reference alignment",
+          "times_cited": 4,
+          "hit": false
+        },
+        {
+          "rank": 3,
+          "node": 140346,
+          "year": 2015,
+          "title": "orthogonal matrix retrieval in cryo electron microscopy",
+          "times_cited": 4,
+          "hit": false
+        },
+        {
+          "rank": 4,
+          "node": 132453,
+          "year": 2015,
+          "title": "covariance estimation using conjugate gradient for 3d classification in cryo em",
+          "times_cited": 5,
+          "hit": false
+        },
+        {
+          "rank": 5,
+          "node": 8334,
+          "year": 2018,
+          "title": "spectral methods from tensor networks",
+          "times_cited": 1,
+          "hit": false
+        },
+        {
+          "rank": 6,
+          "node": 20341,
+          "year": 2017,
+          "title": "heterogeneous multireference alignment a single pass approach",
+          "times_cited": 2,
+          "hit": true
+        },
+        {
+          "rank": 7,
+          "node": 7986,
+          "year": 2016,
+          "title": "a representation theory perspective on simultaneous alignment and classification",
+          "times_cited": 4,
+          "hit": false
+        },
+        {
+          "rank": 8,
+          "node": 4232,
+          "year": 2016,
+          "title": "a max cut approach to heterogeneity in cryo electron microscopy",
+          "times_cited": 3,
+          "hit": false
+        },
+        {
+          "rank": 9,
+          "node": 168455,
+          "year": 2017,
+          "title": "continuously heterogeneous hyper objects in cryo em and 3 d movies of many temporal dimensions",
+          "times_cited": 3,
+          "hit": false
+        },
+        {
+          "rank": 10,
+          "node": 27513,
+          "year": 2013,
+          "title": "multireference alignment using semidefinite programming",
+          "times_cited": 15,
+          "hit": false
+        }
+      ],
+      "missed_targets": [
+        {
+          "node": 87985,
+          "title": "toward single particle reconstruction without particle picking breaking the detection limit"
+        },
+        {
+          "node": 99706,
+          "title": "multireference alignment is easier with an aperiodic translation distribution"
+        },
+        {
+          "node": 132607,
+          "title": "fundamental limits in multi image alignment"
+        }
+      ]
+    },
+    {
+      "query": {
+        "node": 160013,
+        "year": 2019,
+        "title": "pod positional dependency based word embedding for aspect term extraction"
+      },
+      "history": [
+        {
+          "node": 5372,
+          "year": 2015,
+          "title": "dependency recurrent neural language models for sentence completion"
+        },
+        {
+          "node": 9346,
+          "year": 2016,
+          "title": "recursive neural conditional random fields for aspect based sentiment analysis"
+        },
+        {
+          "node": 78341,
+          "year": 2015,
+          "title": "improved semantic representations from tree structured long short term memory networks"
+        },
+        {
+          "node": 89282,
+          "year": 2018,
+          "title": "aspect term extraction with history attention and selective transformation"
+        },
+        {
+          "node": 94874,
+          "year": 2013,
+          "title": "efficient estimation of word representations in vector space"
+        },
+        {
+          "node": 106699,
+          "year": 2013,
+          "title": "distributed representations of words and phrases and their compositionality"
+        },
+        {
+          "node": 154390,
+          "year": 2017,
+          "title": "elixa a modular and flexible absa platform"
+        },
+        {
+          "node": 156254,
+          "year": 2015,
+          "title": "molding cnns for text non linear non consecutive convolutions"
+        }
+      ],
+      "num_targets": 9,
+      "recommendations": [
+        {
+          "rank": 1,
+          "node": 60020,
+          "year": 2016,
+          "title": "unsupervised word and dependency path embeddings for aspect term extraction",
+          "times_cited": 8,
+          "hit": true
+        },
+        {
+          "rank": 2,
+          "node": 40598,
+          "year": 2014,
+          "title": "distributed representations of sentences and documents",
+          "times_cited": 485,
+          "hit": false
+        },
+        {
+          "rank": 3,
+          "node": 61360,
+          "year": 2016,
+          "title": "aspect based sentiment analysis using a two step neural network architecture",
+          "times_cited": 1,
+          "hit": false
+        },
+        {
+          "rank": 4,
+          "node": 83986,
+          "year": 2018,
+          "title": "a unified model for opinion target extraction and target sentiment prediction",
+          "times_cited": 0,
+          "hit": false
+        },
+        {
+          "rank": 5,
+          "node": 6146,
+          "year": 2011,
+          "title": "natural language processing almost from scratch",
+          "times_cited": 684,
+          "hit": false
+        },
+        {
+          "rank": 6,
+          "node": 160949,
+          "year": 2014,
+          "title": "a convolutional neural network for modelling sentences",
+          "times_cited": 329,
+          "hit": false
+        },
+        {
+          "rank": 7,
+          "node": 67166,
+          "year": 2015,
+          "title": "deep residual learning for image recognition",
+          "times_cited": 4564,
+          "hit": false
+        },
+        {
+          "rank": 8,
+          "node": 87843,
+          "year": 2018,
+          "title": "aspect sentiment model for micro reviews",
+          "times_cited": 1,
+          "hit": false
+        },
+        {
+          "rank": 9,
+          "node": 110641,
+          "year": 2014,
+          "title": "convolutional neural networks for sentence classification",
+          "times_cited": 397,
+          "hit": false
+        },
+        {
+          "rank": 10,
+          "node": 1353,
+          "year": 2014,
+          "title": "adam a method for stochastic optimization",
+          "times_cited": 5129,
+          "hit": false
+        }
+      ],
+      "missed_targets": [
+        {
+          "node": 38986,
+          "title": "double embeddings and cnn based sequence labeling for aspect extraction"
+        },
+        {
+          "node": 41480,
+          "title": "attention is all you need"
+        },
+        {
+          "node": 49668,
+          "title": "self attention with relative position representations"
+        },
+        {
+          "node": 68692,
+          "title": "enriching word vectors with subword information"
+        },
+        {
+          "node": 87868,
+          "title": "deep contextualized word representations"
+        }
+      ]
+    }
+  ]
+}

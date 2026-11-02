@@ -11,7 +11,6 @@ _REGISTRY = {
     "node2vec": ("node2vec", "Node2VecModel"),
     "fusion": ("fusion", "ScoreFusion"),
     "gnn": ("gnn", "GNNHybrid"),
-    "lightgcn": ("lightgcn", "LightGCNModel"),
 }
 
 

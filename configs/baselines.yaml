@@ -33,6 +33,7 @@ models:
     variants: *query_variants
   - name: embedding
     label: specter2
+    skip: true          # needs SPECTER2 embeddings (not completed, see README); run with --models specter2
     params: {feature: specter2}
     variants: *query_variants
 

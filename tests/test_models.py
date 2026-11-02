@@ -109,3 +109,20 @@ def test_gnn_masked_graph_and_inductive_query():
         hs = net.items(x, sparse_agg(A))
         q = net.queries(x_q, [h[torch.as_tensor(H)] for h in hs[:-1]], torch.zeros(3, dtype=torch.int64))
     assert torch.allclose(q[0], z_new, atol=1e-5)
+
+
+def test_fusion_logrank_normalisation():
+    from src.models.fusion import ScoreFusion
+
+    class Fixed:
+        def __init__(self, s): self.s = torch.tensor(s)
+        def score_batch(self, qs, rows): return self.s
+
+    f = ScoreFusion(norm="logrank")
+    f.year = torch.tensor([2000, 2000, 2000, 2010])
+    f.models = {"a": Fixed([[5.0, 1.0, 3.0, 9.0]])}
+    qs = QuerySet.from_lists([3], [2005], [np.array([0])], [np.array([1])])
+    out = f._normalised("a", qs, np.array([0]))[0]
+    # eligible = year < 2005 -> nodes 0,1,2 ranked 0 (1st), 2 (2nd), 1 (3rd)
+    assert torch.allclose(out[:3], -torch.log(torch.tensor([1.0, 3.0, 2.0])))
+    assert out[3] < out[:3].min()

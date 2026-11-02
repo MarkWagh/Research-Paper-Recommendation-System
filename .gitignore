@@ -225,3 +225,4 @@ cache/
 *.pt
 *.npy
 logs/
+.DS_Store

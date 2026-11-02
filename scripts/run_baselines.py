@@ -36,6 +36,8 @@ def main():
     specs = cfg["models"]
     if args.models:
         specs = [s for s in specs if s.get("label", s["name"]) in args.models or s["name"] in args.models]
+    else:
+        specs = [s for s in specs if not s.get("skip")]
     for spec in specs:
         run_spec(spec, ctx, cfg.get("out_dir"))
 

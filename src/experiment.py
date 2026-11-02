@@ -11,6 +11,7 @@ Grid tuning maximises validation NDCG@20 (optionally on a subset of validation q
 """
 from __future__ import annotations
 
+import copy
 import itertools
 import time
 from pathlib import Path
@@ -89,8 +90,9 @@ def run_spec(spec: dict, ctx: Context, out_dir: str | Path | None = None, splits
                         records[vname]["tuning"] = results
                     else:
                         chosen[vname] = grid[0]
-                    records[vname]["params"] = {**model.params, **base, **chosen[vname]}
                 model.set_params(**base, **chosen.get(vname, {}))
+                if which == "val":  # record the parameters actually used (after applying the choice)
+                    records[vname]["params"] = {**copy.deepcopy(model.params), **base, **chosen[vname]}
                 t1 = time.time()
                 out = ctx.ev.evaluate(model(qs), qs, return_per_query=True, return_topk=save_topk)
                 records[vname][which] = out["metrics"]
@@ -102,8 +104,12 @@ def run_spec(spec: dict, ctx: Context, out_dir: str | Path | None = None, splits
                     np.savez_compressed(out_dir / f"{vname}_seed{seed}_test_perquery.npz",
                                         query=qs.node, topk=out["topk"],
                                         first_rank=np.array([r.min() for r in out["target_ranks"]]),
+                                        target_rank=np.concatenate(out["target_ranks"]), target_ptr=qs.tgt_ptr,
+                                        target_node=qs.tgt_idx,
                                         **{k.replace("@", "_at_"): v for k, v in out["per_query"].items()})
         for v in variants:
+            if getattr(model, "history", None):
+                records[v]["training_history"] = model.history
             per_seed[v].append(records[v])
         if hasattr(model, "close"):
             model.close()
