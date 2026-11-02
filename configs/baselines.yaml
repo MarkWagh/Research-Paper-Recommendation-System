@@ -1,0 +1,54 @@
+# Baseline model specs (see src/experiment.py for the format).
+tune_queries: 2000   # validation queries used for grid search (final val numbers use all)
+
+_alpha_grid: &alpha_grid {alpha: [0.1, 0.25, 0.4, 0.5, 0.6, 0.75, 0.9]}
+_query_variants: &query_variants
+  own: {params: {query_mode: own}}
+  history: {params: {query_mode: history}}
+  combo: {params: {query_mode: combo}, tune: *alpha_grid}
+
+models:
+  # ---------------------------------------------------------------- popularity
+  - name: popularity
+    label: popularity
+
+  # ---------------------------------------------------------------- content-only
+  - name: tfidf
+    label: tfidf
+    variants: *query_variants
+  - name: bm25
+    label: bm25
+    variants: *query_variants
+  - name: embedding
+    label: ogb_features
+    params: {feature: ogb}
+    variants: *query_variants
+  - name: embedding
+    label: ogb_centered
+    params: {feature: ogb_centered}
+    variants: *query_variants
+  - name: embedding
+    label: minilm
+    params: {feature: minilm}
+    variants: *query_variants
+  - name: embedding
+    label: specter2
+    params: {feature: specter2}
+    variants: *query_variants
+
+  # ---------------------------------------------------------------- graph-only
+  - name: cocitation
+    label: cocitation
+    variants:
+      cocitation: {params: {mode: cocitation}}
+      coupling: {params: {mode: coupling}}
+      both: {params: {mode: both}}
+  - name: ppr
+    label: ppr
+    params: {num_iter: 20, direction: both}
+    variants:
+      default: {tune: {alpha: [0.1, 0.25, 0.5]}}
+  - name: node2vec
+    label: node2vec
+    seeds: [0, 1, 2]
+    params: {dim: 128, walk_length: 20, context_size: 10, walks_per_node: 5, epochs: 2, lr: 0.025}

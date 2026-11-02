@@ -1,0 +1,24 @@
+# Shared settings. Every script merges this first, then --config files, then --set overrides.
+seed: 0
+device: auto            # auto = cuda > mps > cpu
+
+paths:
+  data_root: data       # OGB dataset + titleabs.tsv.gz land here
+  cache: cache          # embeddings, splits, trained models
+  results: results
+
+split:
+  min_refs: 5           # eligible (year < query year) in-dataset references required
+  history_frac: 0.5     # fraction of references revealed as history
+  seed: 0               # seed for query sampling and history/target split
+  train_max_year: 2017
+  val_year: 2018
+  test_year: 2019
+  max_val_queries: 5000 # null = use all
+  max_test_queries: 5000
+
+eval:
+  ks: [10, 20, 50]
+  batch_size: 256       # queries scored per batch
+  time_mask: true       # candidates restricted to year < year(query)
+  tie_seed: 12345       # seeded random priority used to break score ties

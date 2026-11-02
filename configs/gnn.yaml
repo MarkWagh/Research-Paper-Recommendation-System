@@ -1,0 +1,26 @@
+# GNN hybrid (src/models/gnn.py). `python scripts/train_gnn.py [--set gnn.params.loss=bpr ...]`
+gnn:
+  name: gnn
+  label: gnn
+  seeds: [0, 1, 2]
+  params:
+    feature: specter2
+    hidden: 256
+    out_dim: 256
+    num_layers: 2
+    fanout: [10, 5]
+    dropout: 0.1
+    lr: 0.001
+    epochs: 30
+    patience: 4
+    query_frac: 0.5
+    history_frac: 0.5
+    batch_queries: 256
+    num_shared_neg: 512
+    hard_neg_per_query: 0
+    loss: softmax
+    tau: 0.1
+    text_skip: true
+    id_emb: true
+    eval_queries: 1000
+    train_device: auto
