@@ -1,0 +1,166 @@
+{
+  "num_nodes": 169343,
+  "num_edges": 1166243,
+  "nodes_with_text": 169343,
+  "nodes_missing_text": 0,
+  "papers_per_year": {
+    "1971": 1,
+    "1986": 1,
+    "1987": 1,
+    "1988": 1,
+    "1990": 3,
+    "1991": 3,
+    "1992": 1,
+    "1993": 8,
+    "1994": 19,
+    "1995": 25,
+    "1996": 31,
+    "1997": 33,
+    "1998": 123,
+    "1999": 165,
+    "2000": 261,
+    "2001": 248,
+    "2002": 355,
+    "2003": 387,
+    "2004": 415,
+    "2005": 629,
+    "2006": 968,
+    "2007": 1302,
+    "2008": 1931,
+    "2009": 2499,
+    "2010": 3564,
+    "2011": 4427,
+    "2012": 6435,
+    "2013": 8135,
+    "2014": 9154,
+    "2015": 12035,
+    "2016": 16339,
+    "2017": 21442,
+    "2018": 29799,
+    "2019": 39711,
+    "2020": 8892
+  },
+  "edge_direction": {
+    "citing_newer": 0.8714513184645053,
+    "same_year": 0.11062531565034045,
+    "citing_older_(noise)": 0.017923365885154294,
+    "self_loops": 0
+  },
+  "in_degree": {
+    "mean": 6.886868663009395,
+    "median": 1.0,
+    "p90": 12.0,
+    "p99": 87.0,
+    "max": 13155,
+    "frac_zero": 0.366156262733033
+  },
+  "out_degree": {
+    "mean": 6.886868663009395,
+    "median": 4.0,
+    "p90": 18.0,
+    "p99": 37.0,
+    "max": 436,
+    "frac_zero": 0.102986246848113
+  },
+  "eligible_refs_fraction_of_all_refs": 0.8714513184645053,
+  "eligible_refs_per_paper": {
+    "mean": 6.001570776471422,
+    "median": 3.0,
+    "p90": 16.0,
+    "p99": 34.0,
+    "max": 326,
+    "frac_zero": 0.15191061927567126
+  },
+  "train_graph": {
+    "num_edges": 378578,
+    "frac_of_all_edges": 0.32461330957613466
+  },
+  "test_eval_graph": {
+    "num_edges": 554591,
+    "frac_of_all_edges": 0.4755364019333878
+  },
+  "split": {
+    "train": {
+      "num_queries": 21640,
+      "history_size": {
+        "mean": 4.707948243992607,
+        "median": 4.0,
+        "p90": 8.0,
+        "p99": 14.610000000000582,
+        "max": 72,
+        "frac_zero": 0.0
+      },
+      "target_size": {
+        "mean": 4.840203327171904,
+        "median": 4.0,
+        "p90": 8.0,
+        "p99": 15.0,
+        "max": 72,
+        "frac_zero": 0.0
+      },
+      "total_targets": 104742
+    },
+    "val": {
+      "num_queries": 5000,
+      "history_size": {
+        "mean": 6.3214,
+        "median": 5.0,
+        "p90": 12.0,
+        "p99": 20.0,
+        "max": 74,
+        "frac_zero": 0.0
+      },
+      "target_size": {
+        "mean": 6.376,
+        "median": 5.0,
+        "p90": 11.0,
+        "p99": 19.0,
+        "max": 74,
+        "frac_zero": 0.0
+      },
+      "total_targets": 31880
+    },
+    "test": {
+      "num_queries": 5000,
+      "history_size": {
+        "mean": 7.1206,
+        "median": 6.0,
+        "p90": 13.0,
+        "p99": 22.0,
+        "max": 92,
+        "frac_zero": 0.0
+      },
+      "target_size": {
+        "mean": 7.177,
+        "median": 6.0,
+        "p90": 13.0,
+        "p99": 23.0,
+        "max": 92,
+        "frac_zero": 0.0
+      },
+      "total_targets": 35885
+    }
+  },
+  "eligible_queries_before_cap": {
+    "val": 15072,
+    "test": 25296
+  },
+  "split_config": {
+    "min_refs": 5,
+    "history_frac": 0.5,
+    "seed": 0,
+    "train_max_year": 2017,
+    "val_year": 2018,
+    "test_year": 2019,
+    "max_val_queries": 5000,
+    "max_test_queries": 5000
+  },
+  "text_words": {
+    "mean": 170.35587535357234,
+    "median": 167.0,
+    "p90": 247.0,
+    "p99": 304.0,
+    "max": 1410,
+    "frac_zero": 0.0
+  }
+}

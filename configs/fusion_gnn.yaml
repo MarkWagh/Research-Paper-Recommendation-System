@@ -1,0 +1,24 @@
+# Fusion that uses the trained GNN (seed 0, loaded from cache/gnn/) as the learned hybrid component.
+# The gnn params MUST match configs/gnn.yaml so the cached checkpoint is reused.
+tune_queries: 1500
+
+_components: &components
+  gnn:
+    name: gnn
+    params: {feature: minilm, hidden: 256, out_dim: 256, num_layers: 2, fanout: [10, 5], dropout: 0.1,
+             lr: 0.001, epochs: 15, patience: 3, query_frac: 0.5, history_frac: 0.5, batch_queries: 256,
+             num_shared_neg: 512, hard_neg_per_query: 0, loss: softmax, tau: 0.1, text_skip: true,
+             id_emb: true, eval_queries: 1000, train_device: cpu}
+  text: {name: embedding, params: {feature: minilm, query_mode: combo, alpha: 0.6}}
+  graph: {name: ppr, params: {alpha: 0.25, num_iter: 20, direction: both}}
+
+models:
+  - name: fusion
+    label: fusion_gnn
+    params: {components: *components, norm: logrank, weights: {gnn: 1.0, text: 0.0, graph: 1.0}}
+    variants:
+      gnn_graph:
+        params: {w_text: 0.0}
+        tune: {w_graph: [0.5, 1.0, 2.0, 3.0, 4.0, 6.0, 8.0, 12.0]}
+      gnn_text_graph:
+        tune: {w_text: [0.25, 0.5, 1.0], w_graph: [2.0, 4.0, 6.0, 8.0, 12.0]}

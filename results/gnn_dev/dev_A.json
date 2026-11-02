@@ -1,0 +1,72 @@
+{
+  "params": {
+    "feature": "minilm",
+    "hidden": 256,
+    "out_dim": 256,
+    "num_layers": 2,
+    "fanout": [
+      10,
+      5
+    ],
+    "dropout": 0.1,
+    "lr": 0.001,
+    "epochs": 6,
+    "patience": 6,
+    "query_frac": 0.5,
+    "history_frac": 0.5,
+    "batch_queries": 256,
+    "num_shared_neg": 512,
+    "hard_neg_per_query": 0,
+    "loss": "softmax",
+    "tau": 0.1,
+    "text_skip": true,
+    "id_emb": true,
+    "eval_queries": 1000,
+    "train_device": "cpu",
+    "cache_dir": "cache/gnn_dev"
+  },
+  "history": [
+    {
+      "epoch": 1,
+      "loss": 1.4797808552781742,
+      "val_ndcg@20": 0.16376333631007461,
+      "time_s": 59.03539991378784
+    },
+    {
+      "epoch": 2,
+      "loss": 1.1268158784757059,
+      "val_ndcg@20": 0.19715474494970958,
+      "time_s": 62.16227889060974
+    },
+    {
+      "epoch": 3,
+      "loss": 1.0039751790463924,
+      "val_ndcg@20": 0.207312154529439,
+      "time_s": 73.44012999534607
+    },
+    {
+      "epoch": 4,
+      "loss": 0.9324586546669403,
+      "val_ndcg@20": 0.20263740438185418,
+      "time_s": 74.52897596359253
+    },
+    {
+      "epoch": 5,
+      "loss": 0.8408398982137442,
+      "val_ndcg@20": 0.1982723679971582,
+      "time_s": 75.71980118751526
+    },
+    {
+      "epoch": 6,
+      "loss": 0.8157252141584953,
+      "val_ndcg@20": 0.17525272416694823,
+      "time_s": 80.02948713302612
+    }
+  ],
+  "best": {
+    "epoch": 3,
+    "loss": 1.0039751790463924,
+    "val_ndcg@20": 0.207312154529439,
+    "time_s": 73.44012999534607
+  }
+}

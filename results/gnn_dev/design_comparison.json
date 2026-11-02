@@ -1,0 +1,12 @@
+{
+  "note": "GNN design comparison on MiniLM features, seed 0, validation NDCG@20 on a fixed 1,000-query validation subset per epoch (96 steps/epoch). Copied from logs/gnn_minilm_debug.log, results/gnn_dev/dev_A.json and logs/gnn_dev_C.log. Runs B and C were stopped early by hand once the comparison was clear.",
+  "configs": {
+    "B_bpr_plain": {"loss": "bpr", "text_skip": false, "id_emb": false, "hard_neg_per_query": 0,
+                    "val_ndcg20_by_epoch": [0.0784, 0.1045, 0.1124, 0.1259, 0.1220, 0.1364, 0.1427], "stopped": "manually after epoch 7"},
+    "A_softmax_textskip_id": {"loss": "softmax", "text_skip": true, "id_emb": true, "hard_neg_per_query": 0,
+                    "val_ndcg20_by_epoch": [0.1638, 0.1972, 0.2073, 0.2026, 0.1983, 0.1753], "stopped": "completed 6 epochs (best epoch 3)"},
+    "C_A_plus_hard_negatives": {"loss": "softmax", "text_skip": true, "id_emb": true, "hard_neg_per_query": 2,
+                    "val_ndcg20_by_epoch": [0.1694, 0.1639, 0.1701], "stopped": "manually after epoch 3"}
+  },
+  "chosen": "A_softmax_textskip_id"
+}

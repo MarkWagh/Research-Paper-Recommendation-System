@@ -1,0 +1,265 @@
+{
+  "model": "fusion",
+  "label": "fusion",
+  "variant": "text_graph_pop",
+  "seeds": [
+    0
+  ],
+  "runs": [
+    {
+      "seed": 0,
+      "fit_time_s": 1.9725549221038818,
+      "tuning": [
+        {
+          "params": {
+            "norm": "logrank",
+            "w_graph": 2.0,
+            "w_pop": 0.1
+          },
+          "ndcg@20": 0.3670798076871027
+        },
+        {
+          "params": {
+            "norm": "logrank",
+            "w_graph": 2.0,
+            "w_pop": 0.25
+          },
+          "ndcg@20": 0.37365689064560237
+        },
+        {
+          "params": {
+            "norm": "logrank",
+            "w_graph": 2.0,
+            "w_pop": 0.5
+          },
+          "ndcg@20": 0.3695401050042545
+        },
+        {
+          "params": {
+            "norm": "logrank",
+            "w_graph": 2.0,
+            "w_pop": 1.0
+          },
+          "ndcg@20": 0.3298118258199753
+        },
+        {
+          "params": {
+            "norm": "logrank",
+            "w_graph": 4.0,
+            "w_pop": 0.1
+          },
+          "ndcg@20": 0.3727012161836012
+        },
+        {
+          "params": {
+            "norm": "logrank",
+            "w_graph": 4.0,
+            "w_pop": 0.25
+          },
+          "ndcg@20": 0.374040923670895
+        },
+        {
+          "params": {
+            "norm": "logrank",
+            "w_graph": 4.0,
+            "w_pop": 0.5
+          },
+          "ndcg@20": 0.36742842105420104
+        },
+        {
+          "params": {
+            "norm": "logrank",
+            "w_graph": 4.0,
+            "w_pop": 1.0
+          },
+          "ndcg@20": 0.3433256600071721
+        },
+        {
+          "params": {
+            "norm": "logrank",
+            "w_graph": 6.0,
+            "w_pop": 0.1
+          },
+          "ndcg@20": 0.3663919023247237
+        },
+        {
+          "params": {
+            "norm": "logrank",
+            "w_graph": 6.0,
+            "w_pop": 0.25
+          },
+          "ndcg@20": 0.3658785231438531
+        },
+        {
+          "params": {
+            "norm": "logrank",
+            "w_graph": 6.0,
+            "w_pop": 0.5
+          },
+          "ndcg@20": 0.3619253140178236
+        },
+        {
+          "params": {
+            "norm": "logrank",
+            "w_graph": 6.0,
+            "w_pop": 1.0
+          },
+          "ndcg@20": 0.34707303577240795
+        },
+        {
+          "params": {
+            "norm": "logrank",
+            "w_graph": 8.0,
+            "w_pop": 0.1
+          },
+          "ndcg@20": 0.36118565278935116
+        },
+        {
+          "params": {
+            "norm": "logrank",
+            "w_graph": 8.0,
+            "w_pop": 0.25
+          },
+          "ndcg@20": 0.36080911346167555
+        },
+        {
+          "params": {
+            "norm": "logrank",
+            "w_graph": 8.0,
+            "w_pop": 0.5
+          },
+          "ndcg@20": 0.35895720926568575
+        },
+        {
+          "params": {
+            "norm": "logrank",
+            "w_graph": 8.0,
+            "w_pop": 1.0
+          },
+          "ndcg@20": 0.3480166103586176
+        },
+        {
+          "params": {
+            "norm": "logrank",
+            "w_graph": 12.0,
+            "w_pop": 0.1
+          },
+          "ndcg@20": 0.3545329710207813
+        },
+        {
+          "params": {
+            "norm": "logrank",
+            "w_graph": 12.0,
+            "w_pop": 0.25
+          },
+          "ndcg@20": 0.3541354726237922
+        },
+        {
+          "params": {
+            "norm": "logrank",
+            "w_graph": 12.0,
+            "w_pop": 0.5
+          },
+          "ndcg@20": 0.35165072338223186
+        },
+        {
+          "params": {
+            "norm": "logrank",
+            "w_graph": 12.0,
+            "w_pop": 1.0
+          },
+          "ndcg@20": 0.34506718230243927
+        }
+      ],
+      "params": {
+        "components": {
+          "text": {
+            "name": "embedding",
+            "params": {
+              "feature": "minilm",
+              "query_mode": "combo",
+              "alpha": 0.6
+            }
+          },
+          "graph": {
+            "name": "ppr",
+            "params": {
+              "alpha": 0.25,
+              "num_iter": 20,
+              "direction": "both"
+            }
+          },
+          "pop": {
+            "name": "popularity"
+          }
+        },
+        "weights": {
+          "text": 1.0,
+          "graph": 4.0,
+          "pop": 0.25
+        },
+        "norm": "logrank",
+        "memo_gb": 2.5,
+        "seed": 0,
+        "w_graph": 4.0,
+        "w_pop": 0.25
+      },
+      "val": {
+        "recall@10": 0.33718380638029355,
+        "ndcg@10": 0.33114211992691045,
+        "recall@20": 0.45763204571114874,
+        "ndcg@20": 0.3765867045891032,
+        "recall@50": 0.6053909574806597,
+        "ndcg@50": 0.4307190293735943,
+        "mrr": 0.5366281252812592
+      },
+      "val_eval_time_s": 268.0446527004242,
+      "test": {
+        "recall@10": 0.28953734213549587,
+        "ndcg@10": 0.29824843844798926,
+        "recall@20": 0.4006714653249276,
+        "ndcg@20": 0.3382680458808579,
+        "recall@50": 0.5489114665131462,
+        "ndcg@50": 0.39375060664303185,
+        "mrr": 0.5171354748633111
+      },
+      "test_eval_time_s": 370.90588116645813
+    }
+  ],
+  "val": {
+    "recall@10": 0.33718380638029355,
+    "ndcg@10": 0.33114211992691045,
+    "recall@20": 0.45763204571114874,
+    "ndcg@20": 0.3765867045891032,
+    "recall@50": 0.6053909574806597,
+    "ndcg@50": 0.4307190293735943,
+    "mrr": 0.5366281252812592
+  },
+  "val_std": {
+    "recall@10": 0.0,
+    "ndcg@10": 0.0,
+    "recall@20": 0.0,
+    "ndcg@20": 0.0,
+    "recall@50": 0.0,
+    "ndcg@50": 0.0,
+    "mrr": 0.0
+  },
+  "test": {
+    "recall@10": 0.28953734213549587,
+    "ndcg@10": 0.29824843844798926,
+    "recall@20": 0.4006714653249276,
+    "ndcg@20": 0.3382680458808579,
+    "recall@50": 0.5489114665131462,
+    "ndcg@50": 0.39375060664303185,
+    "mrr": 0.5171354748633111
+  },
+  "test_std": {
+    "recall@10": 0.0,
+    "ndcg@10": 0.0,
+    "recall@20": 0.0,
+    "ndcg@20": 0.0,
+    "recall@50": 0.0,
+    "ndcg@50": 0.0,
+    "mrr": 0.0
+  }
+}
